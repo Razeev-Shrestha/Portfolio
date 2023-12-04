@@ -74,6 +74,8 @@ export const projectsData = [
   },
 ] as const
 
+export type ProjectData = (typeof projectsData)[number]
+
 export const skillsData = [
   'HTML5',
   'CSS3',
