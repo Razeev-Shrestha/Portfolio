@@ -1,10 +1,25 @@
+import dynamic from 'next/dynamic'
+
 import { About } from '@/components/About'
-import { Contact } from '@/components/Contact'
 import { Divider } from '@/components/Divider'
-import { Experience } from '@/components/Experience'
 import { Intro } from '@/components/Intro'
-import { Projects } from '@/components/Projects'
-import { Skills } from '@/components/Skills'
+import { Loader } from '@/components/Loader'
+
+const DynamicProjects = dynamic(() => import('@/components/Projects'), {
+  loading: () => <Loader />,
+})
+
+const DynamicExperience = dynamic(() => import('@/components/Experience'), {
+  loading: () => <Loader />,
+})
+
+const DynamicSkills = dynamic(() => import('@/components/Skills'), {
+  loading: () => <Loader />,
+})
+
+const DynamicContact = dynamic(() => import('@/components/Contact'), {
+  loading: () => <Loader />,
+})
 
 export default function Home() {
   return (
@@ -13,12 +28,12 @@ export default function Home() {
       <Divider />
       <About />
       <Divider />
-      <Projects />
+      <DynamicProjects />
       <Divider />
-      <Skills />
+      <DynamicSkills />
       <Divider />
-      <Experience />
-      <Contact />
+      <DynamicExperience />
+      <DynamicContact />
     </main>
   )
 }

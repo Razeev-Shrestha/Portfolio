@@ -7,7 +7,7 @@ import { projectsData } from '@/lib/data'
 import { ProjectCard } from './ProjectCard'
 import { useSectionInView } from '@/lib/hooks'
 
-export const Projects = () => {
+const Projects = () => {
   const { ref } = useSectionInView('Projects', 0.2)
 
   return (
@@ -23,3 +23,5 @@ export const Projects = () => {
     </section>
   )
 }
+
+export default Projects

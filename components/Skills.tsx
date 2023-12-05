@@ -6,7 +6,7 @@ import { useSectionInView } from '@/lib/hooks'
 import { SectionHeading } from './SectionHeading'
 import { skillsData } from '@/lib/data'
 
-export const Skills = () => {
+const Skills = () => {
   const { ref } = useSectionInView('Skills')
   return (
     <section
@@ -49,3 +49,5 @@ const fadeInAnimationVariants = {
     },
   }),
 }
+
+export default Skills
