@@ -4,6 +4,7 @@ import './globals.css'
 
 import { Header } from '@/components/Header'
 import { ActiveSectionContextProvider } from '@/context/ActiveSectionContext'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="bg-[#dbd7fb] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         <ActiveSectionContextProvider>
           <Header />
+          <Toaster position="top-right" />
           {children}
         </ActiveSectionContextProvider>
       </body>
