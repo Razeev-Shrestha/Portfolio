@@ -100,12 +100,9 @@ export const Intro = () => {
           />
         </Link>
         <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/rajeev_shrestha_resume.pdf"
           download
-          className="bg-white cursor-pointer borderBlack px-7 py-3 flex items-center gap-2 rounded-full
-                  outline-none focus:scale-110 hover:scale-110 group active:scale-105 transition
-
-        "
         >
           Download resume
           <Icon type="download" className="opacity-60 group-hover:translate-y-1" />
@@ -113,8 +110,8 @@ export const Intro = () => {
         <a
           href="https://www.linkedin.com/in/rajeev-shrestha-a1475b1b7/"
           target="_blank"
-          className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full
-           outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition borderBlack hover:text-gray-950
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
+           transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60
           "
         >
           <Icon type="linkedin" />
@@ -122,8 +119,8 @@ export const Intro = () => {
         <a
           href="https://github.com/Razeev-Shrestha"
           target="_blank"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem]
-                     outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition borderBlack hover:text-gray-950
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
+           transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60
 
           "
         >

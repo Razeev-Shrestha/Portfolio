@@ -9,16 +9,19 @@ import { skillsData } from '@/lib/data'
 export const Skills = () => {
   const { ref } = useSectionInView('Skills')
   return (
-    <section ref={ref} className="scroll-mt-28 max-w-[53rem] text-center sm:mb-16" id="skills">
-      <SectionHeading>My Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+    <section
+      id="skills"
+      ref={ref}
+      className="mb-24 max-w-[53rem] scroll-mt-28 text-center sm:mb-16"
+    >
+      <SectionHeading>My skills</SectionHeading>
+      <ul className="flex flex-wrap justify-center gap-2 text-lg  text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3 "
-            variants={fadeInAnimation}
+            variants={fadeInAnimationVariants}
             initial="initial"
-            animate="animate"
             whileInView="animate"
             viewport={{
               once: true,
@@ -33,7 +36,7 @@ export const Skills = () => {
   )
 }
 
-const fadeInAnimation = {
+const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,

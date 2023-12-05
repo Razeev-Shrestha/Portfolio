@@ -4,7 +4,7 @@ import { IconBaseProps } from 'react-icons/lib'
 import { CgWorkAlt } from 'react-icons/cg'
 import { FaReact, FaGithubSquare, FaSchool, FaPaperPlane } from 'react-icons/fa'
 import { LuGraduationCap } from 'react-icons/lu'
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
+import { BsArrowRight, BsLinkedin, BsMoon, BsSun } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { TbBrandNextjs } from 'react-icons/tb'
 
@@ -19,6 +19,8 @@ const iconsCollection = {
   school: FaSchool,
   nextjs: TbBrandNextjs,
   plane: FaPaperPlane,
+  sun: BsSun,
+  moon: BsMoon,
 }
 
 type IconProps = IconBaseProps & {

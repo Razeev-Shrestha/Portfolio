@@ -7,11 +7,12 @@ import { SectionHeading } from './SectionHeading'
 import { experiencesData } from '@/lib/data'
 import { Fragment } from 'react'
 import { useSectionInView } from '@/lib/hooks'
+import { useTheme } from '@/context/ActiveThemeContext'
 
 export const Experience = () => {
   const { ref } = useSectionInView('Experience', 0.25)
 
-  const theme = 'light'
+  const { theme } = useTheme()
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-16 sm:mb-16">
       <SectionHeading>My experience</SectionHeading>
@@ -21,6 +22,7 @@ export const Experience = () => {
             <VerticalTimelineElement
               visible
               contentStyle={{
+                zIndex: 15,
                 background: theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
                 boxShadow: 'none',
                 border: '1px solid rgba(0, 0, 0, 0.05)',
@@ -43,7 +45,9 @@ export const Experience = () => {
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className=" italic !mt-0">{item.name}</p>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">{item.description}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </Fragment>
         ))}

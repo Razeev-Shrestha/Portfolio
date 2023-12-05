@@ -5,12 +5,12 @@ import { SectionHeading } from './SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
 
 export const About = () => {
-  const { ref } = useSectionInView('About', 0.99)
+  const { ref } = useSectionInView('About', 0.85)
 
   return (
     <motion.section
       ref={ref}
-      className="mb-2 max-w-[45rem] text-center leading-8 sm:mb-1 scroll-mt-28"
+      className="mb-24 max-w-[45rem] text-center leading-8 sm:mb-1 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
