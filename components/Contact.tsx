@@ -8,7 +8,7 @@ import { sendEmail } from '@/lib/sendEmail'
 import { SubmitButton } from './SubmitButton'
 import toast from 'react-hot-toast'
 
-const Contact = () => {
+export const Contact = () => {
   const { ref } = useSectionInView('Contact')
 
   return (
@@ -73,4 +73,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+

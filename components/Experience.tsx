@@ -9,7 +9,7 @@ import { Fragment } from 'react'
 import { useSectionInView } from '@/lib/hooks'
 import { useTheme } from '@/context/ActiveThemeContext'
 
-const Experience = () => {
+export const Experience = () => {
   const { ref } = useSectionInView('Experience', 0.25)
 
   const { theme } = useTheme()
@@ -56,4 +56,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+
