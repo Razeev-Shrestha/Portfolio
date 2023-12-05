@@ -1,12 +1,20 @@
 'use client'
+
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Icon } from '@/lib/Icons'
+import { useSectionInView } from '@/lib/hooks'
 
 export const Intro = () => {
+  const { ref } = useSectionInView('Home')
+
   return (
-    <section className="mb-28 max-w-[50rem]">
+    <section
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -53,11 +61,12 @@ export const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Rajeev Shrestha.</span> I&apos;m a{' '}
-        <span className="font-bold">full-stack developer</span> with{' '}
-        <span className="font-bold">2 years</span> of experience. I enjoy building{' '}
-        <i className="italic">sites & apps</i>. My focus is{' '}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, I&apos;m Rajeev Shrestha.</span> I&apos;m a passionate{' '}
+        <span className="font-bold italic">front-end developer</span> with{' '}
+        <span className="font-bold">2 years</span> of experience.I specialize in leveraging{' '}
+        <i className="font-bold underline">React</i> and{' '}
+        <i className="font-bold underline">Next.JS</i> to create seamless and engaging user-centric{' '}
+        <span className="italic">web-sites and web applications.</span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
