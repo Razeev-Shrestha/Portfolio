@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 import { useSectionInView } from '@/lib/hooks'
 import { SectionHeading } from './SectionHeading'
-import { Icon } from '@/lib/Icons'
 import { sendEmail } from '@/lib/sendEmail'
 import { SubmitButton } from './SubmitButton'
+import toast from 'react-hot-toast'
 
 export const Contact = () => {
   const { ref } = useSectionInView('Contact')
@@ -40,7 +40,16 @@ export const Contact = () => {
       <form
         className="mt-10 flex flex-col "
         action={async formData => {
-          await sendEmail(formData)
+          const { data, error } = await sendEmail(formData)
+          if (error) {
+            toast.error('Something went wrong. Please try again later.')
+            return
+          }
+          if (data && data.error) {
+            toast.error(data.error.message)
+            return
+          }
+          toast.success('Message sent successfully.')
         }}
       >
         <input
