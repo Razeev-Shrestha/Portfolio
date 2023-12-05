@@ -13,7 +13,7 @@ export const Experience = () => {
 
   const theme = 'light'
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-16 sm:mb-16">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (

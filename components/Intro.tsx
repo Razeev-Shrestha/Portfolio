@@ -5,9 +5,11 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Icon } from '@/lib/Icons'
 import { useSectionInView } from '@/lib/hooks'
+import { useActiveSection } from '@/context/ActiveSectionContext'
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home')
+  const { setSection, setTimeOfLastClick } = useActiveSection()
 
   return (
     <section
@@ -86,6 +88,10 @@ export const Intro = () => {
           href={'#contact'}
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full 
           outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setSection('Contact')
+            setTimeOfLastClick(Date.now())
+          }}
         >
           Contact me
           <Icon
@@ -96,7 +102,7 @@ export const Intro = () => {
         <a
           href="/rajeev_shrestha_resume.pdf"
           download
-          className="bg-white cursor-pointer border border-black/10 px-7 py-3 flex items-center gap-2 rounded-full
+          className="bg-white cursor-pointer borderBlack px-7 py-3 flex items-center gap-2 rounded-full
                   outline-none focus:scale-110 hover:scale-110 group active:scale-105 transition
 
         "
@@ -108,7 +114,7 @@ export const Intro = () => {
           href="https://www.linkedin.com/in/rajeev-shrestha-a1475b1b7/"
           target="_blank"
           className="bg-white p-4 text-[1.35rem] text-gray-700 flex items-center gap-2 rounded-full
-           outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition border border-black/10 hover:text-gray-950
+           outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition borderBlack hover:text-gray-950
           "
         >
           <Icon type="linkedin" />
@@ -117,7 +123,7 @@ export const Intro = () => {
           href="https://github.com/Razeev-Shrestha"
           target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem]
-                     outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition border border-black/10 hover:text-gray-950
+                     outline-none focus:scale-[1.15] hover:scale-[1.15] group active:scale-105 transition borderBlack hover:text-gray-950
 
           "
         >
