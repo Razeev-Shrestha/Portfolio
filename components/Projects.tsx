@@ -23,8 +23,3 @@ export const Projects = () => {
     </section>
   )
 }
-
-
-
-
-
