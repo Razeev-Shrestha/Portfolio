@@ -39,8 +39,10 @@ export const Intro = () => {
               width={190}
               height={190}
               quality={95}
+              sizes="(max-width: 640px) 100px, (max-width: 768px) 150px, 190px"
               priority
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl "
+              aria-label="Rajeev Shrestha avatar"
             />
           </motion.div>
           <motion.span
@@ -110,21 +112,23 @@ export const Intro = () => {
         <a
           href="https://www.linkedin.com/in/rajeev-shrestha-a1475b1b7/"
           target="_blank"
+          aria-label="LinkedIn profile"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
            transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60
           "
         >
-          <Icon type="linkedin" />
+          <Icon type="linkedin" aria-hidden />
         </a>
         <a
           href="https://github.com/Razeev-Shrestha"
           target="_blank"
+          aria-label="GitHub profile"
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105
            transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60
 
           "
         >
-          <Icon type="github" />
+          <Icon type="github" aria-hidden />
         </a>
       </motion.div>
     </section>

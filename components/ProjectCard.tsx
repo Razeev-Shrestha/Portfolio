@@ -47,6 +47,7 @@ export const ProjectCard: FC<ProjectData> = ({ title, description, tags, imageUr
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
+          sizes="(max-width: 640px) 220px, (max-width: 768px) 300px, 450px"
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
