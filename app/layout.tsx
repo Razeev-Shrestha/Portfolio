@@ -10,6 +10,7 @@ import { ActiveSectionContextProvider } from '@/context/ActiveSectionContext'
 import { Footer } from '@/components/Footer'
 import { ThemeSwitch } from '@/components/ThemeSwitch'
 import { ThemeContextProvider } from '@/context/ActiveThemeContext'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   )
