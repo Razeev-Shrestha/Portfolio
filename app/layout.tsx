@@ -13,8 +13,31 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Portfolio | Rajeev Shrestha',
+  applicationName: `Rajeev Shrestha's Portfolio`,
+  generator: 'Next.js',
+  keywords: [
+    'Next.js',
+    'React.Js',
+    'Node.JS',
+    'TypeScript',
+    'JavaScript',
+    'Tailwind CSS',
+    'RSC',
+    'Server Actions',
+  ],
+  robots: 'index, follow',
+  metadataBase: new URL('https://rajeevshrestha.com.np'),
+  authors: [{ name: 'Rajeev Shrestha', url: 'https://rajeevshrestha.com.np' }],
   description:
     'Rajeev Shrestha is a front-end developer with 2 years of experience and based in Kathmandu, Nepal.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://rajeevshrestha.com.np',
+    title: 'Portfolio | Rajeev Shrestha',
+    description:
+      'Rajeev Shrestha is a front-end developer with 2 years of experience and based in Kathmandu, Nepal.',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
