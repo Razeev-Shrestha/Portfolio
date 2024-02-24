@@ -70,6 +70,14 @@ export const experiencesData = [
     icon: createElement(Icon, { type: 'nextjs' }),
     date: 'February,2022 - August,2023',
   },
+  {
+    title:'Front-end Software Developer',
+    name:'Pagoda Labs',
+    location:'Kumaripati, Lalitpur, Nepal',
+    description:`I am currently working as a Front-end Software Developer at Pagoda Labs. I am working on a project that is based on the construction industry. I am responsible for developing and maintaining the front-end of the project.`,
+    icon:createElement(Icon, { type: 'nextjs' }),
+    date:'December,2023 - Present'
+  }
 ] as const
 
 export const projectsData = [
