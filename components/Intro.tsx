@@ -67,7 +67,7 @@ export const Intro = () => {
       >
         <span className="font-bold">Hello, I&apos;m Rajeev Shrestha.</span> I&apos;m a passionate{' '}
         <span className="font-bold italic">front-end developer</span> with{' '}
-        <span className="font-bold">2 years</span> of experience.I specialize in leveraging{' '}
+        <span className="font-bold">3 years</span> of experience.I specialize in leveraging{' '}
         <i className="font-bold underline">React</i> and{' '}
         <i className="font-bold underline">Next.JS</i> to create seamless and engaging user-centric{' '}
         <span className="italic">web-sites and web applications.</span>

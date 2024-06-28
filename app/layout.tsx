@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://rajeevshrestha.com.np'),
   authors: [{ name: 'Rajeev Shrestha', url: 'https://rajeevshrestha.com.np' }],
   description:
-    'Rajeev Shrestha is a front-end developer with 2 years of experience and based in Kathmandu, Nepal.',
+    'Rajeev Shrestha is a front-end developer with 3 years of experience and based in Kathmandu, Nepal.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://rajeevshrestha.com.np',
     title: 'Portfolio | Rajeev Shrestha',
     description:
-      'Rajeev Shrestha is a front-end developer with 2 years of experience and based in Kathmandu, Nepal.',
+      'Rajeev Shrestha is a front-end developer with 3 years of experience and based in Kathmandu, Nepal.',
   },
 }
 
