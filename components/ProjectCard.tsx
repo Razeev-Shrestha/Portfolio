@@ -1,9 +1,9 @@
 'use client'
 
 import Image from 'next/image'
-import { ProjectData } from '@/lib/data'
+import type { ProjectData } from '@/lib/data'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { FC, useRef } from 'react'
+import { type FC, useRef } from 'react'
 
 export const ProjectCard: FC<ProjectData> = ({ title, description, tags, imageUrl }) => {
   const ref = useRef<HTMLDivElement>(null)
@@ -14,6 +14,7 @@ export const ProjectCard: FC<ProjectData> = ({ title, description, tags, imageUr
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1])
+
 
   return (
     <motion.div
@@ -35,7 +36,7 @@ export const ProjectCard: FC<ProjectData> = ({ title, description, tags, imageUr
             {tags.map((tag, index) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
+                key={tag}
               >
                 {tag}
               </li>
