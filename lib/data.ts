@@ -87,7 +87,7 @@ export const experiencesData = [
 		title: "Software Engineer",
 		name: "Fatdog Labs",
 		location: "DAI complex, Guheshwori, Kathmandu",
-		date: "July,2024 - Present",
+		date: "July,2024 - February 2025",
 		icon: createElement(Icon, { type: "nextjs" }),
 		description:
 			"Experienced in maintaining and enhancing complex applications, leading project phases, implementing CI/CD systems, mentoring junior developers, and collaborating with cross-functional teams to deliver high-quality solutions using Agile methodologies, while supporting large-scale platforms like Nepal’s largest IT gadget e-commerce platform.",
@@ -206,4 +206,6 @@ export const skillsData = [
 	"PostgreSQL",
 	"Docker",
 	"AWS Amplify",
+	"Digital Ocean",
+	"AWS EC2","Tanstack"
 ] as const;

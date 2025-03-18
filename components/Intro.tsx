@@ -67,7 +67,7 @@ export const Intro = () => {
       >
         <span className="font-bold">Hello, I&apos;m Rajeev Shrestha.</span> I&apos;m a passionate{' '}
         <span className="font-bold italic">front-end developer</span> with{' '}
-        <span className="font-bold">3 years</span> of experience.I specialize in leveraging{' '}
+        <span className="font-bold">3.5 years</span> of experience.I specialize in leveraging{' '}
         <i className="font-bold underline">React</i> and{' '}
         <i className="font-bold underline">Next.JS</i> to create seamless and engaging user-centric{' '}
         <span className="italic">web-sites and web applications.</span>
@@ -103,7 +103,7 @@ export const Intro = () => {
         </Link>
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/rajeev_shrestha_resume.pdf"
+          href="/RAJEEV_SHRESTHA_RESUME.pdf"
           download
         >
           Download resume
